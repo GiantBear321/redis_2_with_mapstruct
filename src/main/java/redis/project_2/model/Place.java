@@ -17,4 +17,10 @@ public class Place implements Serializable {
     private String name;
 
     private String address;
+
+    public Place(int placeId) {
+        this.placeId = placeId;
+    }
+
+    public Place() {}
 }

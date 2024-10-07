@@ -27,9 +27,25 @@ public class CatController {
         return new ResponseEntity<>(service.findAll(), HttpStatusCode.valueOf(200));
     }
 
+    @GetMapping(value = "/{catId}")
+    public ResponseEntity<CatDto> findById(@PathVariable Integer catId) {
+        return new ResponseEntity<>(service.findById(catId), HttpStatusCode.valueOf(200));
+    }
+
+    @GetMapping(value = "/all/places")
+    public ResponseEntity<List<CatDto>> getAllCatsPlaces() {
+        return new ResponseEntity<>(service.findAllCatPlaces(), HttpStatusCode.valueOf(200));
+    }
+
     @PostMapping("/places/{catId}")
     public ResponseEntity<Cat> saveCat(@PathVariable Integer catId, @RequestBody List<Integer> placesIds) {
         Cat savedCat = service.setCatsPlaces(catId, placesIds);
         return new ResponseEntity<>(savedCat, HttpStatusCode.valueOf(201));
+    }
+
+    @DeleteMapping("/{catId}")
+    public String deleteCat(@PathVariable Integer catId) {
+        service.deleteCat(catId);
+        return "cat was deleted";
     }
 }
