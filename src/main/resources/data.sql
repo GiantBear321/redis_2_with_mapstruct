@@ -1,0 +1,10 @@
+INSERT INTO building.places (place_id, name, address) VALUES (1, 'Central Park', 'New York, NY, USA') ON CONFLICT DO NOTHING;
+INSERT INTO building.places  (place_id, name, address) VALUES (2, 'Louvre Museum', 'Rue de Rivoli, Paris, France') ON CONFLICT DO NOTHING;
+INSERT INTO building.places  (place_id, name, address) VALUES (3, 'Eiffel Tower', 'Champ de Mars, Paris, France') ON CONFLICT DO NOTHING;
+INSERT INTO building.places  (place_id, name, address) VALUES (4, 'Taj Mahal', 'Dharmapuri, Agra, India') ON CONFLICT DO NOTHING;
+INSERT INTO building.places  (place_id, name, address) VALUES (5, 'Great Wall of China', 'Huairou, China') ON CONFLICT DO NOTHING;
+INSERT INTO building.places  (place_id, name, address) VALUES (6, 'Colosseum', 'Piazza del Colosseo, Rome, Italy') ON CONFLICT DO NOTHING;
+INSERT INTO building.places  (place_id, name, address) VALUES (7, 'Sydney Opera House', 'Bennelong Point, Sydney, Australia') ON CONFLICT DO NOTHING;
+INSERT INTO building.places  (place_id, name, address) VALUES (8, 'Christ the Redeemer', 'Parque Nacional da Tijuca, Rio de Janeiro, Brazil') ON CONFLICT DO NOTHING;
+INSERT INTO building.places  (place_id, name, address) VALUES (9, 'Mount Fuji', 'Honshu Island, Japan') ON CONFLICT DO NOTHING;
+INSERT INTO building.places  (place_id, name, address) VALUES (10, 'Niagara Falls', 'Ontario, Canada') ON CONFLICT DO NOTHING;
